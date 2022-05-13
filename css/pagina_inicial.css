@@ -12,51 +12,57 @@ html, body {
 
 
 body{
-    height: 200%;
+    height: 125%;
     background: linear-gradient( #50B285, #2D6A4F);
     background-attachment: fixed;
 
 }
 
 
+
 .header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(64,145,108);
-    height: 6%;
+    height: 12%;
+    width: 100%;
+    position: fixed;
 }
 
-.esquerdaHeader{
+.leftHeader{
     display: flex;
-    width: 12.5%;
+    width: 15%;
     justify-content: center;
     align-items: center;
 }
 
-.esquerdaHeader input{
+.leftHeader input{
     height: 75%;
 }
 
-.direitaHeader{
+.rightHeader{
     display: flex;
-    width: 50%;
+    width:50%;
     justify-content: space-between;
     align-items: center;
 }
 
-.direitaHeader input{
+.rightHeader input{
     font-family: 'Heebo';
     font-size: 30px;
     color: white;
     background: none;
 }
 
-.direitaHeader input[type="image"]{
+.rightHeader input[type="image"]{
     width: 45%;
+    padding-left: 15%;
 }
 
+
+
 .img_exp{
-    height: 42.5%;
+    height: 67.5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -66,7 +72,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 7%;
+    padding-top: 15%;
     height: 75%;
 }
 
@@ -75,7 +81,7 @@ body{
 }
 
 .explorer{
-    height: 16.5%;
+    padding-top: 6.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,5 +92,59 @@ body{
 }
 
 .explorer img{
-    width: 90%;
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 15%;
 }
+
+
+
+.searchFull{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    height: 70%;
+}
+
+.searchInputs{
+    display: flex;
+    padding-left: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 15%;
+    width: 40%;
+}
+
+.searchInputs input{
+    width: 100%;
+    background: none;
+    font-family: 'Heebo';
+    font-size: 28px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.searchInputs ::placeholder{
+    font-family: 'Heebo';
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 2%;
+}
+
+.searchInputs select{
+    width: 80%;
+    background-color: transparent;
+    font-family: 'Heebo';
+    font-size: 28px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 1%;
+}
+
+.searchInputs select option{
+    color: rgb(64,145,108);;
+  }
