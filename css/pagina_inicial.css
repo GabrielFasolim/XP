@@ -10,18 +10,20 @@ html, body {
     height: 100%;
 }
 
+
 body{
-    background-image: linear-gradient(180deg, #50B285, #2D6A4F);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    height: 200%;
+    background: linear-gradient( #50B285, #2D6A4F);
+    background-attachment: fixed;
+
 }
+
 
 .header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(64,145,108);
-    height: 100px;
+    height: 6%;
 }
 
 .esquerdaHeader{
@@ -32,48 +34,57 @@ body{
 }
 
 .esquerdaHeader input{
-    height: auto;
-    max-height: 80px;
+    height: 75%;
 }
 
 .direitaHeader{
     display: flex;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .direitaHeader input{
-    height: auto;
-    max-height: 60px;
-    font-family: 'Heebo';font-size: 30px;
+    font-family: 'Heebo';
+    font-size: 30px;
     color: white;
     background: none;
-    -webkit-text-stroke: 0.4px rgb(34, 113, 86);
-    text-shadow: 3px 4px rgb(34, 113, 86);
-    stroke:  rgb(34, 113, 86);
+}
+
+.direitaHeader input[type="image"]{
+    width: 45%;
+}
+
+.img_exp{
+    height: 42.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .imagemCentral{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 7%;
     height: 75%;
 }
+
 .imagemCentral img{
-    max-width: 85%;
+    width: 85%;
 }
 
 .explorer{
-    height: 12%;
+    height: 16.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Heebo';font-size: 28px;
+    font-family: 'Heebo';
+    font-size: 28px;
     color: white;
 }
 
 .explorer img{
-    max-width: 35px;
+    width: 90%;
 }
