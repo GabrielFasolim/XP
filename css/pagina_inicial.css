@@ -252,7 +252,7 @@ body{
 .vegetariano input{
     background: none;
     color: white;
-    font-size: 80%;
+    font-size: 1.2vw;
 }
 
 .intolerante_lactose{
@@ -264,5 +264,5 @@ body{
 .intolerante_lactose input{
     background: none;    
     color: white;
-    font-size: 80%;
+    font-size: 1.1vw;
 }
