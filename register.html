@@ -9,78 +9,87 @@
     <link rel="icon" href="assets/icon_logo.png">
 </head>
 <body>
+
+    <div class="register">
         <!-- Left side background -->
         <div class="left-side">
-
+            
             <!-- Welcome components -->
             <div class="welcome-components">
-
+                
                 <!-- Welcome Text -->
                 <div class="welcome-text">
                     <p>Bem-vindo<br>ao</p>
                 </div>
-
+                
                 <!-- Logo -->
                 <div class="logo-register">
                     <img src="assets/Logo.png" alt="FoodAction">
                 </div>
-
+                
                 <!-- End welcome components -->
             </div>
             <!-- End left side background -->
         </div>
-
+        
         <!-- Right side background -->
         <div class="right-side">
             <!-- Close button -->
                 <div class="close-button">
                     <a href=""><img src="assets/close_button.png" id="close-btn" alt="Close page"></a>
                 </div>
-            <!-- Create account text -->
-            <div class="account-text">
-                <p>Crie sua Conta</p>
-            </div>
-            <!-- Form -->
-            <div class="account-form">
-                <form>
-                    <!-- Left side -->
-                    <div class="form-left-side">
-                        <label for="fname">Nome</label>
-                        <input type="text" id="fname" name="fname" required>
-                        
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                        
-                        <label for="fphone">Telefone 1</label>
-                        <input type="tel" id="fphone" name="fphone" autocomplete="off" maxlength= "16" placeholder="(00) 0 0000-0000" required>
-                        
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" maxlength="8" name="password">
-                        <!-- End left side -->
-                    </div>
-                    <!-- Right side -->
-                    <div class="form-right-side">
-                        <label for="sname">Sobrenome</label>
-                        <input type="text" id="sname" name="sname">
-                        
-                        <label for="borned">Data de Nascimento</label>
-                        <input type="date" id="borned" name="borned" required>
-                        
-                        <label for="sphone">Telefone 2</label>
-                        <input type="tel" id="sphone" name="sphone" placeholder="(00) 0 0000-0000">
-                        
-                        <label for="confirm_password">Confirme sua Senha</label>
-                        <input type="password" id="confirm_password" maxlength="8" name="confirm_password" required>
-                        <!-- End right side -->
+                <!-- Create account text -->
+                <div class="account-text">
+                    <p>Crie sua Conta</p>
+                </div>
+                <!-- Form -->
+                <div class="account-form">
+                    <div class="full-form">
+                        <form>
+                            <!-- Left side -->
+                            <div class="form-left-side">
+                                <label for="fname">Nome *</label>
+                                <input type="text" id="fname" name="fname" required>
+                                
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                                
+                                <label for="fphone">Telefone 1 *</label>
+                                <input type="tel" id="fphone" name="fphone" autocomplete="off" maxlength= "16" placeholder="(00) 0 0000-0000" required>
+                                
+                                <label for="password">Senha *</label>
+                                <input type="password" id="password" maxlength="8" name="password">
+                                <!-- End left side -->
+                            </div>
+                            <!-- Right side -->
+                            <div class="form-right-side">
+                                <label for="sname">Sobrenome *</label>
+                                <input type="text" id="sname" name="sname">
+                                
+                                <label for="borned">Data de Nascimento *</label>
+                                <input type="date" id="borned" name="borned" required>
+                                
+                                <label for="sphone">Telefone 2</label>
+                                <input type="tel" id="sphone" name="sphone" placeholder="(00) 0 0000-0000">
+                                
+                                <label for="confirm_password">Confirme sua Senha *</label>
+                                <input type="password" id="confirm_password" maxlength="8" name="confirm_password" required>
+                            <!-- End right side -->
+                        </div>
                     </div>
                     <!-- Register button -->
                     <div class="register-button">
                         <input type="submit" class="register-bnt" id="register-bnt" value="Cadastre-se">
                     </div>
                     <!-- End right side background -->
+
+                    <div class="required-fields">
+                        <p>(*) Campos obrigatórios</p>
+                    </div>
                 </form>
             </div>
         </div>
+    </div>
         <script src="js/app.js"></script>
-</body>
-</html>
+    </body>
+    </html>
