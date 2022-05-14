@@ -1,150 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+}
+
+*:focus{
     outline: 0;
-    border: none;
 }
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
 
 body{
-    height: 125%;
+    width: 100%;
+    height: 100%;
     background: linear-gradient( #50B285, #2D6A4F);
     background-attachment: fixed;
-
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(64,145,108);
-    height: 12%;
+    background-color: #40916C;
+    height: 12vh;
     width: 100%;
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
 }
 
-.leftHeader{
+.left_header{
     display: flex;
-    width: 15%;
-    justify-content: center;
     align-items: center;
+    margin-left: 3vw;
 }
 
-.leftHeader input{
-    height: 75%;
+.left_header input[type="image"]{
+    width: 7.5vw;
 }
 
-.rightHeader{
+.right_header{
     display: flex;
-    width:50%;
     justify-content: space-between;
     align-items: center;
+    margin-right: 3vw;
 }
 
-.rightHeader input{
-    font-family: 'Heebo';
-    font-size: 30px;
-    color: white;
+.right_header input[type="button"]{
     background: none;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 2vw;
+    margin-right: 4vw;
 }
 
-.rightHeader input[type="image"]{
-    width: 45%;
-    padding-left: 15%;
+.right_header input[type="image"]{
+    width: 5vw;
 }
 
 
 
-.img_exp{
-    height: 67.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.imagemCentral{
+
+.image_background{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 15%;
-    height: 75%;
+    max-width: 100%;   
+    margin-top: 6vw;
 }
 
-.imagemCentral img{
-    width: 85%;
+.image_background img{
+    max-width: 100%;
+    width: 80vw;   
 }
+
+
+
+
 
 .explorer{
-    padding-top: 6.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    font-family: 'Heebo';
-    font-size: 28px;
+    margin-top: 6vw;
+}
+
+.explorer input[type="button"]{
+    background: none;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 2vw;
+}
+
+.explorer input[type="image"]{
+    width: 3vw;
+}
+
+
+
+
+
+.search_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.25vw black;
+    border-radius: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.food input[type="text"]{
+    width: 30vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: white;
+    background: none;
+}
+
+.food input[type="text"]::placeholder{
     color: white;
 }
 
-.explorer img{
-    width: 50%;
-    padding-left: 25%;
-    padding-top: 15%;
+.food input[type="image"]{
+    width: 2.5vw;
+    margin-right: 0.2vw;
+    padding: 0.25vw;
+    border-left: solid 0.3vw black;
 }
 
-
-
-.searchFull{
+.meal{
     display: flex;
-    flex-direction: column;
-    padding-top: 20%;
-    height: 70%;
+    justify-content: flex-end;
+    margin-right: 8.5vw;
 }
 
-.searchInputs{
-    display: flex;
-    padding-left: 30%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 15%;
-    width: 40%;
-}
-
-.searchInputs input{
-    width: 100%;
+.meal select{
+    width: 25vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
     background: none;
-    font-family: 'Heebo';
-    font-size: 28px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: black;
+    color: white;
+    border: solid 0.25vw black;
+    border-radius: 1vw;
+
+    
 }
 
-.searchInputs ::placeholder{
-    font-family: 'Heebo';
-    font-size: 28px;
-    color: rgba(255, 255, 255, 0.8);
-    padding-left: 2%;
+.meal select option{
+    color: #2D6A4F;
 }
-
-.searchInputs select{
-    width: 80%;
-    background-color: transparent;
-    font-family: 'Heebo';
-    font-size: 28px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: black;
-    color: rgba(255, 255, 255, 0.8);
-    padding-left: 1%;
-}
-
-.searchInputs select option{
-    color: rgb(64,145,108);;
-  }
