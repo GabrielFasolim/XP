@@ -73,8 +73,7 @@ body{
 }
 
 .image_background img{
-    width: 85vw;
-    height: 65vh;
+    width: 80vw;
 }
 
 
@@ -85,7 +84,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4.5vh;
+    margin-top: 20vh;
 }
 
 .explorer input[type="button"]{
@@ -107,7 +106,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vw;
+    margin-top: 10vh;
 }
 
 .food{
@@ -116,7 +115,7 @@ body{
     align-items: center;
     border: solid 0.25vw black;
     border-radius: 1vw;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1.5vh;
 }
 
 .food input[type="text"]{
@@ -146,7 +145,7 @@ body{
 
 .meal select{
     width: 25vw;
-    height: 3.5vw;
+    height: 4vh;
     font-size: 1.5vw;
     background: none;
     color: white;
@@ -197,11 +196,13 @@ body{
     border: solid 0.25vw white;
     border-top-right-radius: 1vw;
     border-top-left-radius: 1vw;
+    display: flex;
+    align-items: center;
 }
 
 .item10 input{
     width: 14vw;
-    height: 13vw;    
+    height: 16vh;    
 }
 
 .grid_container p{
@@ -264,4 +265,119 @@ body{
     background: none;    
     color: white;
     font-size: 1.1vw;
+}
+
+
+
+
+
+@media (aspect-ratio: 16/9){
+
+    .image_background{
+        display: flex;
+        justify-content: center; 
+        margin-top: 5vh;
+    }
+
+    .explorer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4vh;
+    }
+
+    .search_area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+    }
+
+    .meal select{
+        height: 6vh;
+    }
+
+    .item10 input{
+        height: 21.5vh;    
+    }
+
+    .grid_container{
+        width: 80vw;
+        height: 60vh;
+        display: grid;
+        grid-template-areas: 
+            'item1 item2 item3 doacao            '
+            'item4 item5 item6 tags_intolerancias'
+            'item7 item8 item9 tags_intolerancias';
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 2vh;
+        margin-bottom: 7.5vh;
+        gap: 2vw;
+    }
+
+    .item1  input, .item2  input, .item3  input, .item4  input, .item5  input, .item6  input, .item7 input, .item8 input, .item9 input{
+        width: 14vw;
+        border: solid 0.25vw white;
+        border-top-right-radius: 1vw;
+        border-top-left-radius: 1vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .item10 input{
+        width: 14vw;
+        height: 19vh;    
+    }
+    
+    .grid_container p{
+        border-bottom: solid 0.25vw white;
+        border-left: solid 0.25vw white;
+        border-right: solid 0.25vw white;
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-family: 'Heebo';
+        font-size: 1.25vw;
+    }
+}
+
+.header{
+    background-color: #40916C;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.left_header{
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+}
+
+.left_header input[type="image"]{
+    height: 10vh;
+}
+
+.right_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+.right_header input[type="button"]{
+    background: none;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 2vw;
+    margin-right: 4vw;
+}
+
+.right_header input[type="image"]{
+    height: 8vh;
 }
