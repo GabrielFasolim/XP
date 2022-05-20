@@ -5,10 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/userPortal.css">
-    <title>Portal do Usuário</title>
+    <title>Seja Bem-vindo(a)!</title>
     <link rel="icon" href="assets/icon_logo.png">
 </head>
 <body>
+    <!-- Menu -->
+    <div class="header">
+        <div class="left_header">
+            <input type="image" src="assets/Logo.png" alt="Home">
+        </div>
+        <div class="right_header">
+            <input type="button" value="Home">
+            <input type="button" value="Sobre nós">
+            <input type="button" value="Fale conosco">
+            <input type="image" src="assets/login.png" alt="Logo">
+        </div>
+    </div>
+    <!-- End menu -->
+
+    <!-- User Portal -->
+    <div class="user-portal">
+        <!-- Left side -->
+        <div class="left-side">
+
+            <!-- User profile -->
+            <div class="user-profile">
+
+                <div class="user-image">
+                    <img src="./assets/user_image.png" alt="User profile photo">
+                </div>
+
+                <div class="user-name">
+                    <p id="user-name-txt">Olá, Neymar!</p>
+                </div>
+
+            </div>
+            <!-- End user profile -->
+
+            <!-- Premium button -->
+            <div class="premium-button">
+
+                <div class="premium-text">
+                    <p id="premim-btn-txt">Torne-se assinante!</p>
+                </div>
+
+                <div class="premium-btn-img">
+                    <img src="./assets/premium_button.png" alt="Became a premium user">
+                </div>
+
+            </div>
+            <!-- End premium button -->
+
+            <!-- Donate button -->
+            <div class="donate-button">
+
+                <div class="donate-text">
+                    <p id="donate-btn-txt">Faça uma doação!</p>
+                </div>
+
+                <div class="donate-btn-img">
+                    <img src="./assets/donate_button.png" alt="Make a donation">
+                </div>
+
+            </div>
+            <!-- End donate button -->
+    
+        </div>
+        <!-- End left side -->
+    
+        <!-- Right side -->
+        <div class="right-side">
+            <!-- Objective -->
+            <div class="objective">
+                <div class="objective-title">
+                    <p>Objetivo</p>
+                </div>
+                <div class="objective-divider">
+                    <img src="./assets/divider.png" alt="Divider">
+                </div>
+                <div class="select-objectives">
+                    <form>
+                        <input type="checkbox" id="option_1" name="option_1" value="Perder peso">
+                        <label for="option_1">Perder peso</label><br>
+                        <input type="checkbox" id="option_2" name="option_2" value="Ganhar massa magra">
+                        <label for="option_2">Ganhar massa magra</label><br>
+                        <input type="checkbox" id="option_3" name="option_3" value="Rotina saudável">
+                        <label for="option_3">Rotina saudável</label><br>
+                        <input type="checkbox" id="option_4" name="option_4" value="Manter peso">
+                        <label for="option_4">Manter peso</label><br>
+                    </form>
+                </div>
+            </div>
+            <!-- End objective -->
+        </div>
+        <!-- End right side -->
+    </div>
+    <!-- End user portal -->
+
+
     
 </body>
 </html>
