@@ -8,113 +8,130 @@
     <title>Pagina inicial</title>
 </head>
 <body>
-    
-    
-    <div class="header">
 
+    <!-- header -->
+    <header>
+        <!-- header esquerdo -->
         <div class="left_header">
-            <input type="image" src="assets/Logo.png" alt="Home">
+            <input type="image" src="assets/Logo.png" alt="Logo/Home">
         </div>
-
+        <!-- header direito -->
         <div class="right_header">
             <input type="button" value="Home">
             <input type="button" value="Sobre nós">
             <input type="button" value="Fale conosco">
-            <input type="image" src="assets/login.png" alt="Logo">
+            <input type="image" src="assets/login.png" alt="Login">
         </div>
 
+    </header>
+
+    <!-- imagem central -->
+    <div class="imagem_central">
+        <img src="assets/imagem_central.png" alt="Imagem central">
     </div>
 
-
-    <div class="image_background">
-        <img src="assets/imagem_central.png" alt="Background">
-    </div>
-
-
-    <div class="explorer">
+    <!-- explorar -->
+    <div class="explorar">
         <input type="button" value="Explorar">
-        <input type="image" src="assets/arrow_down.png" alt="Explorar">
+        <input type="image" src="assets/arrow_down.png" alt="Descer">
     </div>
 
-
-    <div class="search_area">
-        <div class="food">
+    <!-- barra de pesquisa e seleçao (refeições)-->
+    <div class="barras_pesquisa">
+        <!--barra de alimentos-->
+        <div class="alimentos">
             <input type="text" placeholder="Digite os alimentos">
             <input type="image" src="assets/lupa.png" alt="Pesquisar">
         </div>
-        <div class="meal">
-            <select>
-                <option value="" disabled selected hidden>Selecione a refeição</option>
-                <option value="cafemanha">Café da manhã</option>
-                <option value="almoco">Almoço</option>
-                <option value="cafetarde">Café da tarde</option>
-                <option value="jantar">Jantar</option>
-            </select>
-        </div>
+        <!--barra de refeições-->
+        <select>
+            <option disabled selected hidden>Selecione a refeição</option>
+            <option value="cafe">Café da manhã</option>
+            <option value="almoco">Almoço</option>
+            <option value="lanche">Lanche</option>
+            <option value="jantar">Jantar</option>
+        </select>
+        
     </div>
 
-    <div class="grid_container">
-        <div class="item1">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Fricasse de frango</p>
-        </div>
-
-        <div class="item2">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Pao de queijo</p>
-        </div>
-
-        <div class="item3">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Pizza</p>
-        </div>
-
-        <div class="item4">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Torta de bolacha</p>
-        </div>
-
-        <div class="item5">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Lasanha de beringela</p>
-        </div>
-
-        <div class="item6">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Pudim</p>
-        </div>
-
-        <div class="item7">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Brigadeiro</p>
-        </div>
-
-        <div class="item8">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Bolo de cenoura</p>
-        </div>
-
-        <div class="item9">
-            <input type="image" src="assets/comida_teste.jpg" alt="">
-            <p>Cookies</p>
-        </div>
-
-        <div class="item10">
-            <input type="image" src="assets/doacao.png" alt="">
-        </div>
-
-        <div class="item11">
-            <div class="vegetariano">
-                <input type="button" value="Vegetariano">
-                <input type="button" value="X">
+    <!-- grid das pesquisas -->
+    <div class="grids">
+        <!--orientação por colunas-->
+        <div class="grid1">
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
             </div>
-            
-            <div class="intolerante_lactose">
-                <input type="button" value="Intolerante à lactose">
-                <input type="button" value="X">
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
             </div>
         </div>
+        <!--orientação por colunas-->
+        <div class="grid2">
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+        </div>
+        <!--orientação por colunas-->
+        <div class="grid3">
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+            <!--classe generica-->
+            <div class="item">
+                <input type="image" src="assets/comida_teste.jpg" alt="Comida">
+                <input type="button" value="Fricasse de frango">
+            </div>
+        </div>
+        <!--orientação por colunas-->
+        <div class="grid4">
+            <!-- doação -->
+            <div class="doacao">
+                <input type="image" src="assets/doacao.png" alt="Doação">
+            </div>
+            <!-- tags -->
+            <div class="tags">
+                <!-- tag generica -->
+                <div class="tag">
+                    <p>Vegetariano</p>
+                    <input type="button" value="X">
+                </div>
 
+                <!-- tag generica -->
+                <div class="tag">
+                    <p>Intolerante à lactose</p>
+                    <input type="button" value="X">
+                </div>
+                
+            </div>
+        </div>
     </div>
     
 </body>
