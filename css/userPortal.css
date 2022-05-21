@@ -141,3 +141,26 @@ body{
     flex-direction: column;
 }
 
+.restriction {
+    border: green solid 2px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice {
+    border: purple solid 2px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.more-information {
+    border: black solid 2px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
