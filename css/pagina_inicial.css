@@ -196,6 +196,14 @@ header{
     font-size: 1vw;
 }
 
+#vegetariano{
+    background-color: red;
+}
+
+#intolerante_lactose{
+    background-color: blue;
+}
+
 .tag input{
     background: 0;
 }

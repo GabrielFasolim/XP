@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pagina_inicial.css">
+    <script src="js/script.js"></script>
     <title>Pagina inicial</title>
 </head>
 <body>
@@ -13,14 +14,14 @@
     <header>
         <!-- header esquerdo -->
         <div class="left_header">
-            <input type="image" src="assets/Logo.png" alt="Logo/Home">
+            <input type="image" src="assets/Logo.png" onclick="subir_pag()" alt="Logo/Home">
         </div>
         <!-- header direito -->
         <div class="right_header">
-            <input type="button" value="Home">
-            <input type="button" value="Sobre nós">
-            <input type="button" value="Fale conosco">
-            <input type="image" src="assets/login.png" alt="Login">
+            <input type="button" value="Home" onclick="subir_pag()" id="home">
+            <input type="button" value="Sobre nós" id="sobrenos">
+            <input type="button" value="Fale conosco" id="faleconosco">
+            <input type="image" src="assets/login.png" alt="Login" id="login">
         </div>
 
     </header>
@@ -32,19 +33,19 @@
 
     <!-- explorar -->
     <div class="explorar">
-        <input type="button" value="Explorar">
-        <input type="image" src="assets/arrow_down.png" alt="Descer">
+        <input type="button" value="Explorar" onclick="descer_pag()" id="explorar">
+        <input type="image" src="assets/arrow_down.png" onclick="descer_pag()" alt="Descer" id="seta_descer">
     </div>
 
     <!-- barra de pesquisa e seleçao (refeições)-->
     <div class="barras_pesquisa">
         <!--barra de alimentos-->
         <div class="alimentos">
-            <input type="text" placeholder="Digite os alimentos">
-            <input type="image" src="assets/lupa.png" alt="Pesquisar">
+            <input type="text" placeholder="Digite os alimentos" id="alimentos">
+            <input type="image" src="assets/lupa.png" alt="Pesquisar"  onclick="pesquisar()" id="pesquisar">
         </div>
         <!--barra de refeições-->
-        <select>
+        <select id="refeicoes">
             <option disabled selected hidden>Selecione a refeição</option>
             <option value="cafe">Café da manhã</option>
             <option value="almoco">Almoço</option>
@@ -117,17 +118,17 @@
                 <input type="image" src="assets/doacao.png" alt="Doação">
             </div>
             <!-- tags -->
-            <div class="tags">
+            <div class="tags" id="tags">
                 <!-- tag generica -->
-                <div class="tag">
+                <div class="tag" id="vegetariano">
                     <p>Vegetariano</p>
                     <input type="button" value="X">
                 </div>
 
                 <!-- tag generica -->
-                <div class="tag">
+                <div class="tag" id="intolerante_lactose">
                     <p>Intolerante à lactose</p>
-                    <input type="button" value="X">
+                    <input type="button" value="X" onclick="">
                 </div>
                 
             </div>
