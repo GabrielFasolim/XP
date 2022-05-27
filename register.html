@@ -64,7 +64,7 @@
                             <!-- Right side -->
                             <div class="form-right-side">
                                 <label for="sname">Sobrenome *</label>
-                                <input type="text" id="sname" name="sname">
+                                <input type="text" id="sname" name="sname" required>
                                 
                                 <label for="borned">Data de Nascimento *</label>
                                 <input type="date" id="borned" name="borned" required>
@@ -79,7 +79,7 @@
                     </div>
                     <!-- Register button -->
                     <div class="register-button">
-                        <input type="submit" class="register-bnt" id="register-bnt" value="Cadastre-se">
+                        <input type="submit" class="register-bnt" id="register-bnt" onclick="confirmFields()" value="Cadastre-se">
                     </div>
                     <!-- End right side background -->
 
@@ -90,6 +90,6 @@
             </div>
         </div>
     </div>
-        <script src="js/app.js"></script>
+        <script src="js/register.js"></script>
     </body>
     </html>

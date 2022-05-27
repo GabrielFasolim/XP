@@ -75,80 +75,133 @@
     
         <!-- Right side -->
         <div class="right-side">
-            <!-- Objective -->
-            <div class="objective">
-                <div class="objective-title">
-                    <p>Objetivo</p>
-                </div>
-                <div class="objective-divider">
-                    <img src="./assets/divider.png" alt="Divider">
-                </div>
-                <div class="select-objectives">
-                    <form>
-                        <input type="checkbox" id="option_1_o" name="option_1" value="Perder peso">
-                        <label for="option_1">Perder peso</label><br>
-                        <input type="checkbox" id="option_2_o" name="option_2" value="Ganhar massa magra">
-                        <label for="option_2">Ganhar massa magra</label><br>
-                        <input type="checkbox" id="option_3_o" name="option_3" value="Rotina saudável">
-                        <label for="option_3">Rotina saudável</label><br>
-                        <input type="checkbox" id="option_4_o" name="option_4" value="Manter peso">
-                        <label for="option_4">Manter peso</label><br>
-                    </form>
-                </div>
-            </div>
-            <!-- End objective -->
-
-            <!-- Restriction -->
-            <div class="restriction">
-                <div class="limitation">
-                    <div class="limitation-text">
-                        <p>Limitações</p>
+            <!-- Right side top -->
+            <div class="right-side-top">
+                <!-- Objective -->
+                <div class="objective">
+                    <div class="objective-title">
+                        <p id="objective">Objetivo</p>
                     </div>
-                    <div class="restriction-divider">
+                    <div class="objective-divider">
                         <img src="./assets/divider.png" alt="Divider">
                     </div>
-
-                    <div class="choice">
-                        <div class="restriction-choice">
-
-                            <p>Restrições</p>
-
-                            <form>
-                                <input type="radio" id="yes" name="choice" value="Yes">
-                                <label for="yes">Sim</label>
-                                <input type="radio" id="no" name="choice" value="No">
-                                <label for="no">Não</label>
-                            </form>
-                        </div>
-                    </div>
-
+                    <div class="select-objectives">
                         <form>
-                        <input type="checkbox" id="option_1_r" name="option_1_r" value="Intolerânte à lactose">
-                        <label for="option_1">Intolerânte à lactose</label><br>
-                        <input type="checkbox" id="option_2_r" name="option_2_r" value="Celíaco (intolerante ao glúten)">
-                        <label for="option_2">Celíaco (intolerante ao glúten)</label><br>
-                        <input type="checkbox" id="option_3_r" name="option_3_r" value="Diabétes">
-                        <label for="option_3">Diabétes</label><br>
-                        <input type="checkbox" id="option_4_r" name="option_4_r" value="Hipertensão">
-                        <label for="option_4">Hipertensão</label><br>
+                            <input type="checkbox" id="option_1_o" name="option_1" value="Perder peso">
+                            <label for="option_1">Perder peso</label><br>
+                            <input type="checkbox" id="option_2_o" name="option_2" value="Ganhar massa magra">
+                            <label for="option_2">Ganhar massa magra</label><br>
+                            <input type="checkbox" id="option_3_o" name="option_3" value="Rotina saudável">
+                            <label for="option_3">Rotina saudável</label><br>
+                            <input type="checkbox" id="option_4_o" name="option_4" value="Manter peso">
+                            <label for="option_4">Manter peso</label><br>
                         </form>
-                        
+                    </div>
                 </div>
+                <!-- End objective -->
+    
+                <!-- Restriction -->
+                <div class="restriction">
+                    <div class="limitation">
+                        <div class="limitation-text">
+                            <p id="limit">Limitações</p>
+                        </div>
+                        <div class="restriction-divider">
+                            <img src="./assets/divider.png" alt="Divider">
+                        </div>
+    
+                        <div class="choice">
+                            <div class="restriction-choice">
+    
+                                <p>Restrições</p>
+    
+                                <form>
+                                    <input type="radio" id="yes" name="choice" value="Yes">
+                                    <label for="yes">Sim</label>
+                                    <input type="radio" id="no" name="choice" value="No">
+                                    <label for="no">Não</label>
+                                </form>
+                            </div>
+                        </div>
+    
+                            <form>
+                            <input type="checkbox" id="option_1_r" name="option_1_r" value="Intolerânte à lactose">
+                            <label for="option_1">Intolerânte à lactose</label><br>
+                            <input type="checkbox" id="option_2_r" name="option_2_r" value="Celíaco (intolerante ao glúten)">
+                            <label for="option_2">Celíaco (intolerante ao glúten)</label><br>
+                            <input type="checkbox" id="option_3_r" name="option_3_r" value="Diabétes">
+                            <label for="option_3">Diabétes</label><br>
+                            <input type="checkbox" id="option_4_r" name="option_4_r" value="Hipertensão">
+                            <label for="option_4">Hipertensão</label><br>
+                            </form>
+                            
+                    </div>
+                </div>
+                <!-- End restriction -->
             </div>
-            <!-- End restriction -->
+            <!-- Right side top -->
 
             <!-- More information -->
             <div class="more-information">
-                <div class="more-info-text">
-                    <p>Mais Informações</p>
+                <div class="left-information">
+
+                    <div class="more-info-text">
+                        <p id="more-info">Mais Informações</p>
+                    </div>
+                    <div class="more-info-divider">
+                        <img src="./assets/divider.png" alt="Divider">
+                    </div>
+
+                    <form>
+                        <label for="peso" id="peso_usuario">Peso:</label>
+                        <input type="text" id="peso" name="peso" placeholder="ex: 53"><br>
+                        <label for="peso" id="altura_usuario">Altura:</label>
+                        <input type="text" id="altura" name="altura" placeholder="ex: 164"><br>
+                        <label for="atv_fisica" id="atv_fisica_usuario">Atividade Física:</label>
+                        <select name="atv_fisica" id="atv_fisica">
+                            <option value="nenhuma">Nenhuma</option>
+                            <option value="uma_semana">1 vez por semana</option>
+                            <option value="duas_semanas">2 vezes por semana</option>
+                            <option value="mais_semanas">3+ vezes por semana</option>
+                        </select>
+                    </form>
                 </div>
-                <div class="more-info-divider">
-                    <img src="./assets/divider.png" alt="Divider">
+
+                <div class="right-information">
+                    <div class="alergic">
+                        <p id="alergia">Alergia(s)</p>
+
+                        <form>
+                            <input type="radio" id="yes" name="choice" value="Yes">
+                            <label for="yes">Sim</label>
+                            <input type="radio" id="no" name="choice" value="No">
+                            <label for="no">Não</label>
+                        </form>
+
+                    </div>
+
+                    <form>
+                        <input type="checkbox" id="option_1_r" name="option_1_r" value="Intolerânte à lactose">
+                        <label for="option_1">Ovo</label><br>
+                        <input type="checkbox" id="option_2_r" name="option_2_r" value="Celíaco (intolerante ao glúten)">
+                        <label for="option_2">Peixes</label><br>
+                        <input type="checkbox" id="option_3_r" name="option_3_r" value="Diabétes">
+                        <label for="option_3">Frutos do mar</label><br>
+                        <input type="checkbox" id="option_4_r" name="option_4_r" value="Hipertensão">
+                        <label for="option_4">Oleaginosas</label><br>
+                        </form>
+
                 </div>
             </div>
             <!-- End more information -->
+
+            <div class="nutricionist-button">
+                <a href="#"><img src="./assets/nutricionist_button.png" alt="Acesso ao Nutricionista"></a>
+            </div>
+
         </div>
         <!-- End right side -->
+
     </div>
     <!-- End user portal -->
 
