@@ -70,17 +70,30 @@ header{
 .cont_sup{
     display: flex;
     justify-content: space-between;
+    margin-top: 3%;
 }
 
 .esq_sup img{
     width: 100%;
     border: solid 3px white;
     border-radius: 10%;
+    margin-left: 10%;
 }
 
 .tags{
     display: flex;
     justify-content: space-around;
+}
+
+.tags p{
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 15%;
+}
+
+.tags p:first-child{
+    background: none;
+    border: none;
 }
 
 .dir_sup{
@@ -141,7 +154,7 @@ header{
 .cont_inf{
     display: flex;
     justify-content: space-around;
-    margin-top: 2.5%;
+    margin-top: 6%;
 }
 
 .cont_inf img{
@@ -158,6 +171,10 @@ header{
     margin-bottom: 12.5%;
 }
 
+.ingredientes img{
+    margin-top: 10%;
+}
+
 .ing{
     display: flex;
     align-items: center;
@@ -166,6 +183,7 @@ header{
 .modo_de_preparo{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .modo_de_preparo h3, .passo{
@@ -179,6 +197,12 @@ header{
 .passo p{
     margin-left: 4%;
     font-size: 11px;
+}
+
+.info_nutri{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .top_macros{
