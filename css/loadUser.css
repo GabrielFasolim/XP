@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Heebo:wght@200;300&display=swap');
+body,html {
+    background: linear-gradient(#50b285, #2D6A4F);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+    border-radius: 2px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    font-family: 'Heebo';
+}
+
+.user  input{
+    border-radius: 10px;
+}
+
+.senha{
+    display: flex;
+    justify-content: center;
+    font-family: 'Heebo';
+    font-weight: 500;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.senha input{
+    border-radius: 10px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: initial;
+}

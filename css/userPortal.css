@@ -13,7 +13,7 @@
     outline: 0;
 }
 
-body{
+html, body{
     width: 100%;
     height: 100%;
     background-attachment: fixed;
@@ -125,25 +125,28 @@ body{
     margin: 15px;
 }
 
+/* 
+========================
+        Right Side 
+========================*/
+
 .right-side {
-    border: blue solid 2px;
     width: 100%;
     height: 100%;
     background: linear-gradient( #50B285, #2D6A4F);
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 30px 0px 0px 30px;
 }
 
 .right-side-top {
     width: 100%;
-    height: 100%;
+    height: 40%;
     display: flex;
     flex-direction: row;
 }
 
 .objective {
-    border: red solid 2px;
     width: 50%;
     height: auto;
     display: flex;
@@ -151,7 +154,6 @@ body{
 }
 
 .restriction {
-    border: green solid 2px;
     width: 50%;
     height: auto;
     display: flex;
@@ -159,15 +161,23 @@ body{
 }
 
 .choice {
-    border: purple solid 2px;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
+.limit-choice, .alergic {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#limit-choose, #alergic-choose {
+    padding: 0px 0px 0px 30px;
+}
+
 .more-information {
-    border: black solid 2px;
     width: 100%;
     height: auto;
     display: flex;
@@ -183,9 +193,10 @@ body{
 
 .right-information {
     width: 50%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    margin: 60px 0px 0px 0px;
 }
 
 .nutricionist-button {
@@ -193,14 +204,20 @@ body{
     height: auto;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
-#objective, #limit, 
+#objective, #restriction_title, 
 #more-info, #alergic {
     font-family: 'Cantata One';
     color: white;
     font-size: 20px;
+}
+
+#limit, #alergia {
+    font-family: 'Cantata One';
+    color: white;
+    font-size: 16px;
 }
 
 label {
@@ -209,7 +226,17 @@ label {
     font-size: 16px;
 }
 
+input[type=text], select {
+    font-family: 'Heebo';
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+    margin: 10px 0px 10px 25px;
+    border-radius: 10px;
+}
+
 #peso_usuario, #altura_usuario, #atv_fisica_usuario {
     font-family: 'Cantata One';
-    font-size: 14px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
 }
