@@ -1,48 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Heebo:wght@200;300&display=swap');
-body,html {
-    background: linear-gradient(#50b285, #2D6A4F);
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+label {
+    padding: 15px 10px 5px 10px;
+    font-size: 14px;
+    font-family: 'Cantata One';
+}
+
+input {
+    width: 100%;
+    margin: 0px;
+}
+
+/* ----------------------
+        Register Page 
+-------------------------*/
+
+.register {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    background-image: linear-gradient(180deg, #50B285, #2D6A4F);
+    width: 35%;
+    height: 90%;
+    margin: 40px 0px 30px 110px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
-.login{
+.welcome-components {
+    width: 70%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin-top: 2%;
-    border-radius: 2px;
 }
 
-.user{
+.welcome-text {
+    width: 95%;
     display: flex;
-    justify-content: center;
-    font-family: 'Heebo';
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Cantata One';
+    font-size: 24px;
 }
 
-.user  input{
-    border-radius: 10px;
-}
-
-.senha{
+.logo-register {
+    width: 95%;
     display: flex;
-    justify-content: center;
-    font-family: 'Heebo';
-    font-weight: 500;
-    margin-top: 5%;
-    border-radius: 10px;
+    flex-direction: column;
+    height: auto;
 }
 
-.senha input{
-    border-radius: 10px;
-}
-
-.botao{
+.right-side {
+    width: 50%;
+    height: 90%;
+    margin: 40px 30px 30px 0px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.close-button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 15px 0px 0px;
+}
+
+.account-text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 60px 0px 0px 0px;
+    text-align: center;
+    color: #000;
+    font-family: 'Cantata One';
+    font-size: 20px;
+}
+
+
+/* Form */
+
+.account-form {
     width: 100%;
-    align-items: initial;
+    height: 100%;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+    justify-content: center;
+}
+
+#fname, #sname, 
+#email, #fphone, 
+#sphone, #borned,
+#password, #confirm_password {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0px 0px 15px 0px;
+}
+
+
+/* Load Button */
+
+.load-button {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.register-bnt {
+    background-color: #50B385;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Cantata One';
+}
+
+.required-fields {
+    margin: 190px 0px 0px 50px;
+    color: red;
+    font-size: 14px;
+    font-family: 'Heebo', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }

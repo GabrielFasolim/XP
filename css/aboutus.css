@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Heebo&display=swap');
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body,html {
+    background: linear-gradient(#50b285, #2D6A4F);
+    width: 100%;
+    height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-size: 24px;
+    margin: 15px;
+    color: white;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    height: 12vh;
+    width: calc(100% / 100vw);
+    background-color: #40916c;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header esquerdo */
+.left_header{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+
+#logo{
+    margin-top: 11px;
+    height: 9vh;
+}
+
+/* header direito */
+.right_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-icon {
+    padding: 15px 30px 10px 10px;
+}
+
+.right_header input{
+    background: 0;
+    font-size: 2vw;
+    margin-right: 3vw;
+}
+
+.right_header input[type="image"]{
+    height: 7vh;
+    margin-top: 0;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+}
+
+#imgprincp{
+    width:100%;
+    filter: blur(2.5px);
+    filter: brightness(300%);
+    filter: drop-shadow(60%);
+    filter: contrast(25%);
+
+}
+
+.sobre{
+    font-family:'Cantata One';
+    font-weight:bold;
+    color:black;
+    position: absolute;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1cm;
+}
+    
+.sobre img{
+    height: 100px;
+    width: 100px;
+    margin: 1cm; 
+}
+
+.sobre p{
+    font-family:'Heebo';
+    font-size: 2vw;
+    font-weight:bolder;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 1cm;
+}
+
+
+.quemsomos p{
+    font-family: 'Heebo';
+    color: white;
+    margin-left: 2%;
+    margin:20px;
+   
+}
+
+.quemsomos{
+    font-family: 'Cantata One';
+    color: white;
+    margin-left: 2%;
+
+    text-align: center;
+    margin-top: 1%; 
+    
+}
+
+.quemsomos img{
+    justify-content: center;
+    width: 1.7cm;
+
+}
+
+.oqfzmos{
+    font-family: 'Cantata One';
+    color: white;
+    margin-top: 1%;
+    align-items: center;
+    text-align: center;
+}
+
+.oqfzmos p{
+    font-family: 'Heebo';
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.oqfzmos img{
+    width: 2cm;
+    margin: 0.2cm;
+}
+
+.txt2{
+    color: white;
+    font-family: 'Heebo';
+    flex-direction: column;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.txt2 img{
+    width: 2cm;
+    text-align: center;
+    margin: 0.2cm;
+}
+
+.segtela{
+    background-color: #40916c;
+    display:flex;
+    justify-content:space-around;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+}
+
+.txt3{
+    color: white;
+    font-family: 'Heebo';
+    flex-direction: column;
+    margin-top: 6%;
+    text-align: center;
+    
+}
+
+.txt3 img{
+    justify-content: center;
+    width: 2cm;
+    margin: 0.3cm;
+}
+

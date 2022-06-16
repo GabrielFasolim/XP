@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+body, html {
+    background-image: linear-gradient(180deg, #50b285, #2d6a4f);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: 0%;
+    border: 0;
+    box-sizing:0%;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-size: 24px;
+    margin: 15px;
+    color: white;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    height: 12vh;
+    width: calc(100% / 100vw);
+    background-color: #40916c;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header esquerdo */
+.left_header{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+
+#logo{
+    margin-top: 11px;
+    height: 9vh;
+}
+/* header direito */
+.right_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-icon {
+    padding: 15px 30px 10px 10px;
+}
+
+.right_header input{
+    background: 0;
+    font-size: 2vw;
+    margin-right: 3vw;
+}
+
+.right_header input[type="image"]{
+    height: 7vh;
+    margin-top: 0;
+}
+
+
+h1 { color: white;
+
+}
+
+.campo {
+    color: red;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+p {color: white;
+    font-family: 'Heebo';
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:100%; 
+}
+
+.conteudo input { 
+    margin: 10px;
+    padding: 10px;
+    height: 10%;
+    width: 60%;
+}
+
+.caixas {
+    display:flex;
+    flex-direction:row;
+}
+
+.mensagem {
+    display:flex;
+    flex-direction:column;
+    width:40%;
+    justify-content:space-between;
+}
+
+.mensagem input[type="text"]
+{ width:90%;
+  height:70%;
+}
+
+.mensagem input[type="button"]
+{ width:25%;
+  height:20%;
+  display:flex;
+  justify-content:flex-end;
+
+}
+
+.mensagem input[value="Enviar"]
+{   color:#2d6a4f; }

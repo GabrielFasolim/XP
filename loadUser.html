@@ -4,24 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Usuário</title>
-    <link rel="stylesheet" href="./css/loadUser.css">
+    <link rel="stylesheet" href="css/loadUser.css">
+    <title>Acesse sua conta!</title>
+    <link rel="icon" href="assets/icon_logo.png">
 </head>
 <body>
-    <div class="login">
-        <div class="user">
-            <label for="nome_login">Login:  </label>
-            <input type="login" id="nome_login">
-        </div>
-        <div class="senha">
-            <label for="senha_login">Senha:  </label>
-            <input type="senha" id="senha">
-        </div>
-        <div class="botao">
-            <button onclick="logUserIn()">Login</button>
 
-        </div>       
+    <div class="register">
+        <!-- Left side background -->
+        <div class="left-side">
+            
+            <!-- Welcome components -->
+            <div class="welcome-components">
+                
+                <!-- Welcome Text -->
+                <div class="welcome-text">
+                    <p>Bem-vindo<br>ao</p>
+                </div>
+                
+                <!-- Logo -->
+                <div class="logo-register">
+                    <a href="./pagina_inicial.html"><img src="assets/Logo.png" alt="FoodAction"></a>
+                </div>
+                
+                <!-- End welcome components -->
+            </div>
+            <!-- End left side background -->
+        </div>
+        
+        <!-- Right side background -->
+        <div class="right-side">
+            <!-- Close button -->
+                <div class="close-button">
+                    <a href="./pagina_inicial.html"><img src="assets/close_button.png" id="close-btn" alt="Close page"></a>
+                </div>
+                <!-- Create account text -->
+                <div class="account-text">
+                    <p>Acesse sua Conta</p>
+                </div>
+                <!-- Form -->
+                <div class="account-form">
+                    <div class="full-form">
+                        <form>
+                            <!-- Left side -->
+                            <div class="form">
+                                
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email">
+                                
+                                <label for="password">Senha *</label>
+                                <input type="password" id="password" maxlength="8" name="password">
+                                
+                                <p>Ainda não possui cadastro? <a href="./register.html">Clique aqui</a> para se cadastrar.</p>
+                                     
+
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Load button -->
+                    <div class="load-button">
+                        <input type="submit" class="register-bnt" id="register-bnt" onclick="logUserIn()" value="Login">
+                    </div>
+                    <!-- End right side background -->
+
+                    <div class="required-fields">
+                        <p>(*) Campos obrigatórios</p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <script src="./js/loadUser.js"></script>
-</body>
-</html>
+        <script src="js/loadUser.js"></script>
+    </body>
+    </html>

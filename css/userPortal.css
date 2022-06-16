@@ -21,6 +21,17 @@ html, body{
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-size: 24px;
+    margin: 15px;
+}
+
+#logo{
+    height: 9vh;
+}
+
 /* 
 ========================
     Header - Menu Bar 

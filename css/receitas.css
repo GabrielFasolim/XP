@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Heebo';
+    color: white;
+    font-size: 15px;
+}
+
+*::placeholder{
+    color: white;
+}
+
+body, html{
+    width: calc(100% / 100vw);
+    height: auto;
+    background: linear-gradient(#51b385, #2d6a4f);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-size: 24px;
+    margin: 15px;
+}
+
+#logo{
+    height: 9vh;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    height: 12vh;
+    width: calc(100% / 100vw);
+    background-color: #40916c;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header esquerdo */
+.left_header{
+    display: flex;
+    align-items: center;
+    margin-left: 2.5vw;
+}
+
+.left_header input{
+    height: 9vh;
+}
+
+/* header direito */
+.right_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right_header input{
+    background: 0;
+    font-size: 2vw;
+    margin-top: 2.5vh;
+    margin-right: 4vw;
+}
+
+.right_header input[type="image"]{
+    height: 7vh;
+    margin-top: 0;
+}
+
+
+
+
+
+.cont_sup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.esq_sup img{
+    width: 100%;
+    border: solid 3px white;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tags p{
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 15%;
+}
+
+.tags p:first-child{
+    background: none;
+    border: none;
+}
+
+.dir_sup{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dir_sup p{
+    width: 65%;
+}
+
+.info_sup{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.info_sup img{
+    width: 3vw;
+}
+
+.info_sup p{
+    width: 100%;
+}
+
+.unidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avaliacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estrelas{
+    display: flex;
+}
+
+.estrelas img{
+    width: 2vw;
+}
+
+
+
+
+
+.cont_inf{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+
+.cont_inf img{
+    width: 4vw;
+}
+
+.ingredientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingredientes h3, .ing{
+    margin-bottom: 12.5%;
+}
+
+.ingredientes img{
+    margin-top: 10%;
+}
+
+.ing{
+    display: flex;
+    align-items: center;
+}
+
+.modo_de_preparo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modo_de_preparo h3, .passo{
+    margin-bottom: 3%;
+}
+
+.passo h4{
+    font-size: 11px;
+}
+
+.passo p{
+    margin-left: 4%;
+    font-size: 11px;
+}
+
+.info_nutri{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_macros{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d6a4f;
+    border-top: solid 3px black;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bot_macros{
+    display: flex;
+    background-color: white;
+    border-bottom: solid 3px black;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bot_macros p{
+    color: black;
+    border: solid 1px black;
+}

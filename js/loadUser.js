@@ -1,12 +1,12 @@
 var user = loadUser();
 
 function logUserIn() {
-    var nome_login = document.getElementById("nome_login").value;
-    var senha = document.getElementById("senha").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
 
     for (let index = 0; index < user.length; index++) {
-        if(user[index].nome_login == nome_login) {
-            if(user[index].senha == senha) {
+        if(user[index].email == email) {
+            if(user[index].password == password) {
                 alert("Login efetuado com sucesso!");
                 document.location = "./register.html"
 

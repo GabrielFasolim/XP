@@ -32,7 +32,7 @@ function confirmFields() {
     }
 
     else {
-        successMessage();
+        userRegister();
     }
 }
 
@@ -40,20 +40,18 @@ var user = loadUser();
 
 function userRegister() {
 
-    // confirmFields();
-
-    user_name = document.getElementById("fname").value;
+    email = document.getElementById("email").value;
     password = document.getElementById("password").value;
     confirmPassword = document.getElementById("confirm_password").value;
 
     if(password == confirmPassword) {
         if(user == undefined) {
-            user = [{ user_name, password }]
+            user = [{ email, password }]
         } else {
-            user.push([{ user_name, password}])
+            user.push([{ email, password }])
         }
         localStorage.setItem("user", JSON.stringify(user));
-        console.log(JSON.stringify(user));
+        alert("Usuário cadastrado com sucesso!")
     } else {
         alert("As senhas não são iguais!");
     }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="icon" href="assets/icon_logo.png">
+    <link rel="stylesheet" href="./css/faleconosco.css">
+</head>
+      
+<body>
+    <!-- header -->
+    <header>
+        <!-- header esquerdo -->
+        <div class="left_header">
+            <a href="./pagina_inicial.html"><img src="assets/Logo.png" id="logo"></a>
+        </div>
+        <!-- header direito -->
+        <div class="right_header">
+            <a href="./pagina_inicial.html">Home</a>
+            <a href="./aboutus.html">Sobre nós</a>
+            <a href="./faleconosco.html">Fale Conosco</a>
+            <div class="login-icon">
+                <a href="./loadUser.html"><img src="./assets/login.png" alt="Acessar Login"></a>
+            </div>
+        </div>
+
+    </header>
+   
+    <div class="titulo">
+        <h1>Fale Conosco</h1>
+
+        <div class="texto">
+            <p>Entre em contato conosco para qualquer problema ou dúvida.</p>
+            <p>Converse com a gente sempre que quiser!</p>
+        </div>
+    </div>
+
+    <div class="caixas">
+
+        <div class="conteudo">
+
+            <input type="text"placeholder="Nome" id="nome">
+            <input type="email"placeholder="Email" id="email">
+            <input type="tel"placeholder="Telefone" id="telefone">
+            <input type="text"placeholder="Assunto" id="assunto">
+        </div>
+
+        <div class= "mensagem">
+            <input type="text"placeholder="Mensagem" id="mensagem">
+            <input type="button"value="Enviar" onclick="validar_entrada()" id="enviar">
+        </div>
+        
+    </div>
+    <script src="./js/faleconosco.js"></script>
+</body>
+</html>
