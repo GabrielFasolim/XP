@@ -158,12 +158,9 @@ header{
 
 #receita{
     width: 15vw;
-    height: 16vh;
     margin-top: 4vh;
-    border: 0.225vw solid white;
-    border-radius: 1.5vw;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border: white solid 3px;
+    border-radius: 30px;
 }
 
 .doacao input{
