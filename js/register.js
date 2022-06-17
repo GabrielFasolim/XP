@@ -52,6 +52,9 @@ function userRegister() {
         }
         localStorage.setItem("user", JSON.stringify(user));
         alert("Usuário cadastrado com sucesso!")
+
+        document.location = "./loadUser.html"
+        return;
     } else {
         alert("As senhas não são iguais!");
     }

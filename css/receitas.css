@@ -86,14 +86,14 @@ header{
 
 .esq_sup img{
     width: 100%;
-    border: solid 3px white;
-    border-radius: 10%;
-    margin-left: 10%;
+    margin: 0px 0px 10px 50px;
 }
 
 .tags{
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-left: 45px;
 }
 
 .tags p{
@@ -116,6 +116,7 @@ header{
 
 .dir_sup p{
     width: 65%;
+    text-align: justify;
 }
 
 .info_sup{
@@ -175,11 +176,6 @@ header{
 .ingredientes{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.ingredientes h3, .ing{
-    margin-bottom: 12.5%;
 }
 
 .ingredientes img{
@@ -188,26 +184,23 @@ header{
 
 .ing{
     display: flex;
-    align-items: center;
 }
 
 .modo_de_preparo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
+    width: 40%;
 }
 
 .modo_de_preparo h3, .passo{
     margin-bottom: 3%;
 }
 
-.passo h4{
-    font-size: 11px;
-}
-
 .passo p{
     margin-left: 4%;
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .info_nutri{
@@ -240,4 +233,22 @@ header{
 .bot_macros p{
     color: black;
     border: solid 1px black;
+}
+
+label {
+    font-family: 'Heebo';
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-icon-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

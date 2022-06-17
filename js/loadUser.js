@@ -8,10 +8,17 @@ function logUserIn() {
         if(user[index].email == email) {
             if(user[index].password == password) {
                 alert("Login efetuado com sucesso!");
-                document.location = "./register.html"
-
+                document.location = "./userPortal.html"
                 return;
             }
+            else {
+                alert("Senha incorreta!");
+                return;
+            }
+        }
+        else {
+            alert("Usuário incorreto!");
+            return;
         }
         
     }

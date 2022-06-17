@@ -156,7 +156,7 @@ header{
     margin-right: 5vw;
 }
 
-.item input[type="image"]{
+#receita{
     width: 15vw;
     height: 16vh;
     margin-top: 4vh;
@@ -178,6 +178,7 @@ header{
     height: 4vh;
     width: 15.45vw;
     font-size: 1vw;
+    margin-left: 15px;
 }
 
 .tags{
